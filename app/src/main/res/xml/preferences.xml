@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="Edit Username"
+        android:key="username"
+        android:summary="Modifique su username"
+        android:icon="@drawable/ic_person_black"/>
+
+    <EditTextPreference
+        android:key="password"
+        android:summary="Ingresar nueva contraseña"
+        android:title="Edit password"
+        android:icon="@drawable/ic_lock_outline_black"/>
+
+
+    <ListPreference     android:title="Fuentes de letras"
+        android:summary="Selecciona el tipo de fuente que deseas"
+        android:key="fuenteL"
+        android:defaultValue="1"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically" />
+
+
+</PreferenceScreen>
+

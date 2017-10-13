@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cruz.mypersonalapp.Activities.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:padding="6dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_img"
+        android:src="@drawable/bg_fondo" />
+    <EditText
+        android:id="@+id/lg_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_person_black"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="15dp"
+        android:fontFamily="monospace"
+        android:hint="@string/app_user_hint" />
+
+    <EditText
+        android:id="@+id/lg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_lock_outline_black"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="monospace"
+        android:hint="@string/app_password_hint" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_btn"
+        android:fontFamily="monospace"
+        android:text="@string/app_button_submit"
+        android:onClick="goLogin"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>
